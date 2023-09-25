@@ -62,7 +62,7 @@ func main() {
 	getType(v1) // v is of type bidirectional chan of bool values
 	getType(v2) // v is of type bidirectional chan of int values
 	getType(v3) // v is of type send-only chan of string values
-	getType(v4) // v is of type bidirectional chan of bool values
-	getType(v5) // v is of type bidirectional chan of int values
-	getType(v6) // v is of type send-only chan of string values
+	getType(v4) // v is of type int
+	getType(v5) // v is of type string
+	getType(v6) // v is of type bool
 }
