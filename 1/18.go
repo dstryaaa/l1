@@ -20,7 +20,7 @@ func (c *Count) Increment() {
 
 func main() {
 	c := &Count{}
-	wg := &sync.WaitGroup{} // Создаем экземпляр WaitGroup для ожидания всех горутин.
+	var wg sync.WaitGroup // Создаем экземпляр WaitGroup для ожидания всех горутин.
 	for i := 0; i < 1000; i++ {
 		wg.Add(1) // Добавляем одну горутину в WaitGroup перед запуском.
 		go func() {
